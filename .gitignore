@@ -1,0 +1,30 @@
+# ─── SECRETS — never commit these ───────────────────────────────────────────
+credentials.json          # Google OAuth client file you download from Google Cloud
+client_secret*.json       # same thing under Google's default download name
+token.json                # saved login — contains a refresh token
+.env                      # any environment-variable secrets
+*.pem
+*.key
+
+# ─── AutoBackup runtime state & the backups themselves ──────────────────────
+.autobackup/              # local config, lock files, token (if home is inside the repo)
+*.zip                     # backup archives — your actual data, not source code
+*.part                    # half-written backups
+Backups/
+AutoBackups/
+
+# ─── Python ─────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+
+# ─── OS / editor junk ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
